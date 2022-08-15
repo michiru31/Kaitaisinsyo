@@ -22,7 +22,10 @@
             <th class="th-width">誕生日</th>
             <th class="th-width">年齢</th>
             <th class="th-width">性別</th>
+<<<<<<< HEAD
             <th></th>
+=======
+>>>>>>> c2eb899df6849c3522453a9829d20305e7a0f851
           </tr>
         </thead>
         <tbody>
@@ -32,11 +35,14 @@
             <td th:text="${#dates.format(item.birthday, 'YYYY/MM/dd')}"></td>
             <td th:text="${item.age}"></td>
             <td th:text="${item.gender == 1} ? '男性': '女性'"></td>
+<<<<<<< HEAD
             <td>
              <a class="btn btn-primary"th:href="@{'/user/detail/'+${item.userId}}">
                  詳細
              </a>
             </td>
+=======
+>>>>>>> c2eb899df6849c3522453a9829d20305e7a0f851
           </tr>
         </tbody>
       </table>

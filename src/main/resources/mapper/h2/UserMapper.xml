@@ -5,6 +5,7 @@
 <!-- Mapperとxmlのマッピング -->
 <mapper namespace="com.example.repository.UserMapper">
 
+<<<<<<< HEAD
 	<!-- マッピング定義(ユーザー) -->
 	<resultMap type="com.example.domain.user.model.MUser"
 		id="user">
@@ -62,4 +63,37 @@
 		where
 		user_id=#{userId}
 	</select>
+=======
+  <!-- ユーザー1件登録 -->
+  <insert id="insertOne">
+    insert into m_user(
+        user_id
+      , password
+      , user_name
+      , birthday
+      , age
+      , gender
+      , department_id
+      , role
+    )
+    values (
+        #{userId}
+      , #{password}
+      , #{userName}
+      , #{birthday}
+      , #{age}
+      , #{gender}
+      , #{departmentId}
+      , #{role}
+    )
+  </insert>
+
+  <!-- ユーザー複数件取得 -->
+  <select id="findMany" resultType="MUser">
+    select
+      *
+    from
+      m_user
+  </select>
+>>>>>>> c2eb899df6849c3522453a9829d20305e7a0f851
 </mapper>
