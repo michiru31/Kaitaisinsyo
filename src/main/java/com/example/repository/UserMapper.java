@@ -9,12 +9,6 @@ import com.example.domain.user.model.MUser;
 @Mapper
 public interface UserMapper {
 
-	/** ユーザー登録 */
-	public int insertOne(MUser user);
+MUser> findMany();
 
-	/* ユーザー取得 */
-	public List<MUser> findMany();
-	
-	/*ユーザー取得(1件)*/
-	public MUser findOne(String userId);
 }
