@@ -5,5 +5,4 @@
 <!-- Mapperとxmlのマッピング -->
 <mapper namespace="com.example.repository.UserMapper">
 
-
 </mapper>

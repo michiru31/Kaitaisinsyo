@@ -9,6 +9,4 @@ import com.example.domain.user.model.MUser;
 @Mapper
 public interface UserMapper {
 
-MUser> findMany();
-
 }

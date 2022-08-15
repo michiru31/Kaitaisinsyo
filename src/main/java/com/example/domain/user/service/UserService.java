@@ -8,5 +8,3 @@ public interface UserService {
 
     /** ユーザー登録 */
     public void signup(MUser user);
-
-}
