@@ -36,6 +36,7 @@ public class UserDetailController {
 
         // Modelに登録
         model.addAttribute("userDetailForm", form);
+        form.setSalaryList(user.getSalaryList());
 
         // ユーザー詳細画面を表示
         return "user/detail";
