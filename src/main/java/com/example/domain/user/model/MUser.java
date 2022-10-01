@@ -27,4 +27,6 @@ public class MUser {
 	private Department department;
 	@Transient
 	private List<Salary> salaryList;
+	
+	
 }
